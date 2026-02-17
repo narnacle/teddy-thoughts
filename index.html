@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Thoughts - Transform Your Inner Dialogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧸 Teddy Thoughts</h1>
+            <p class="subtitle">Gently reframing your inner dialogue, one thought at a time</p>
+        </header>
+
+        <main>
+            <div class="teddy-bear">
+                <div class="bear-face">
+                    <div class="eyes">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                    </div>
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="bear-ears">
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <h2>What's on your mind, friend?</h2>
+                <p class="instruction">Share a negative thought you're having, and Teddy will help you reframe it.</p>
+                
+                <form id="thoughtForm">
+                    <textarea 
+                        id="negativeThought" 
+                        placeholder="e.g., I'm not good enough... I always mess things up... Nobody likes me..."
+                        rows="4"
+                        required
+                    ></textarea>
+                    
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">Share with Teddy</span>
+                        <span class="btn-icon">🧸</span>
+                    </button>
+                </form>
+            </div>
+
+            <div id="responseSection" class="response-section hidden">
+                <div class="teddy-message">
+                    <div class="message-bubble">
+                        <p id="teddyResponse"></p>
+                    </div>
+                </div>
+                
+                <div class="reframe-section">
+                    <h3>Gentle Reframe:</h3>
+                    <div id="reframedThought" class="reframe-card">
+                        <!-- Reframed thought will appear here -->
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button id="newThoughtBtn" class="secondary-btn">
+                            <span>Share Another Thought</span>
+                        </button>
+                        <button id="saveThoughtBtn" class="secondary-btn">
+                            <span>💾 Save This Reframe</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="savedThoughtsSection" class="saved-thoughts-section">
+                <h3>Your Saved Teddy Thoughts 🫙</h3>
+                <div id="savedThoughts" class="saved-thoughts-container">
+                    <!-- Saved thoughts will appear here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Be gentle with yourself - you're doing the best you can 🧸</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
